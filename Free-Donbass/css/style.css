@@ -322,7 +322,7 @@ header {
 
 .section-title h2 {
 	font-size: 50px;
-	color: #B3B3BB;
+	color: #0e83d1;
 	font-weight: 900;
 	letter-spacing: -0.6px;
 	position: relative;
@@ -658,7 +658,8 @@ figure.effect-bubba:hover p {
 --------------------*/
 
 .light-bg {
-	background-color: #f8f8f8;
+	/*background-color: #f8f8f8;*/
+	background-color: #dbdee1;
 }
 
 .dark-bg {
