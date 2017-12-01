@@ -533,94 +533,18 @@
 			</div>
 		</section>
 
-   <!--Калькулятор-->
-		<section id="calculator">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="section-title">
-							<h2>Рассчет содержания продукта</h2>
-							<p>Каких затрат потребует данный сервис для содержания в год</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 formPadding">
-						<div class="form-group">
-							<label for="domen-name">Доменное имя:</label>
-							<select class = "form-control" id="domen-name">
-								<option value = "-">Выберите доменное имя</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="host-name">Планируемый хостинг:</label>
-							<select class = "form-control" id="host-name">
-								<option value = "-">Выберите хостинг</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="admin-name">Администратирование сайта:</label>
-							<select class = "form-control" id="admin-name">
-								<option>Выберите тариф администратирования</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="ad-name">Продвижение сайта:</label>
-							<select class = "form-control" id="ad-name">
-								<option>Выберите название контекстной рекламы</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<table class = "table">
-						<thead>
-								<tr>
-									<th>Наименование</th>
-									<th>Цена (руб./год)</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Доменное имя</td>
-									<td id = "tb-domen">-</td>
-								</tr>
-								<tr>
-									<td>Хостинг</td>
-									<td id = "tb-host">-</td>
-								</tr>
-								<tr>
-									<td>Администратирование</td>
-									<td id = "tb-admin">-</td>
-								</tr>
-								<tr>
-									<td>Продвижение</td>
-									<td id = "tb-ad">-</td>
-								</tr>
-								<tr>
-									<td>Итого</td>
-									<td id = "tb-sum">-</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section class="section-cta">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<h2>Взаимодействие с госслужбами еще никогда не было таким простым.</h2>
+						<h2>Хотите узнать, сколько это будет стоить? Мы вам поможем!</h2>
 					</div>
 					<div class="col-md-3">
-						<a href="#" class="button-cta">ЗАГРУЗИТЬ</a>
+						<a href="#" class="button-cta" data-toggle="modal" data-target="#Modal-Calc">РАССЧИТАТЬ</a>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<!--Конец калькулятора-->
 
 		<section id="contact" class="dark-bg">
 			<div class="container">
@@ -804,6 +728,90 @@
 					<div class="modal-body">
 						<img src="images/mission/M6.jpg" alt="img01" class="img-responsive" />
 						<p>Пресечение распространения наркотических средств и рекламы контактов распространителей.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Modal for calc-->
+		<div class="modal" id="Modal-Calc" tabindex="-1" role="dialog" aria-labelledby="Modal-label-Calc">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-Calc">Рассчет содержания продукта</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<div class="section-title">
+									<p>Каких затрат потребует данный сервис</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-5 col-lg-offset-1 formPadding">
+								<div class="form-group">
+									<label for="domen-name">Доменное имя:</label>
+									<select class = "form-control" id="domen-name">
+										<option value = "-">Выберите доменное имя</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="host-name">Планируемый хостинг:</label>
+									<select class = "form-control" id="host-name">
+										<option value = "-">Выберите хостинг</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="admin-name">Администратирование сайта:</label>
+									<select class = "form-control" id="admin-name">
+										<option>Выберите тариф администратирования</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="ad-name">Продвижение сайта:</label>
+									<select class = "form-control" id="ad-name">
+										<option>Выберите название контекстной рекламы</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<table class = "table">
+								<thead>
+										<tr>
+											<th>Наименование</th>
+											<th>Цена (руб./год)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Доменное имя</td>
+											<td id = "tb-domen">-</td>
+										</tr>
+										<tr>
+											<td>Хостинг</td>
+											<td id = "tb-host">-</td>
+										</tr>
+										<tr>
+											<td>Администратирование</td>
+											<td id = "tb-admin">-</td>
+										</tr>
+										<tr>
+											<td>Продвижение</td>
+											<td id = "tb-ad">-</td>
+										</tr>
+										<tr>
+											<td>Итого</td>
+											<td id = "tb-sum">-</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
