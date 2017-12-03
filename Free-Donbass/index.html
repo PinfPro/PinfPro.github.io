@@ -71,7 +71,7 @@
 						<div class="owl-slider owl-carousel">
 							<div class="item">
 								<div class="owl-slider-item">
-									<img src="images/demo/don-5.jpg" class="img-responsive" alt="portfolio">
+									<img src="images/demo/don-4.jpeg" class="img-responsive" alt="portfolio">
 									<div class="intro-text">
 										<div class="intro-lead-in">Сервис, который укрепит</div>
 										<div class="intro-heading">Безопасность Донбасса</div>
@@ -80,7 +80,7 @@
 							</div>
 							<div class="item">
 								<div class="owl-slider-item">
-									<img src="images/demo/don-2.jpg" class="img-responsive" alt="portfolio">
+									<img src="images/demo/don-2.jpeg" class="img-responsive" alt="portfolio">
 									<div class="intro-text">
 										<div class="intro-lead-in">Сервис, который обеспечит</div>
 										<div class="intro-heading">Комфорт Донбасса</div>
@@ -89,7 +89,7 @@
 							</div>
 							<div class="item">
 								<div class="owl-slider-item">
-									<img src="images/demo/don-8.jpg" class="img-responsive" alt="portfolio">
+									<img src="images/demo/don-3.jpeg" class="img-responsive" alt="portfolio">
 									<div class="intro-text">
 										<div class="intro-lead-in">Сервис, который сохранит</div>
 										<div class="intro-heading">Чистоту Донбасса</div>
@@ -578,17 +578,19 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<form name="sentMessage" id="contactForm" novalidate="">
+						<form  name="sentMessage" id="contactForm" novalidate=""
+						action="https://formspree.io/pinf_16_u@mail.ru"
+      			method="POST">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Ваше имя *" id="name" required="" data-validation-required-message="Please enter your name.">
+										<input type="text" class="form-control" name="name" placeholder="Ваше имя *" id="name" required="" data-validation-required-message="Пожалуйста введите ваше имя!">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+										<input type="email" class="form-control" name="email" placeholder="Email *" id="email" required="" data-validation-required-message="Пожалуйста введите ваш email!">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
@@ -596,9 +598,12 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="form-control" placeholder="Ваше сообщение *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+										<textarea class="form-control" name="message" placeholder="Ваше сообщение *" id="message" required="" data-validation-required-message="Пожалуйста введите сообщение!"></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
+									<input type="hidden" name="_next" value="//pinfpro.github.io/Free-Donbass/" />
+									<input type="hidden" name="_subject" value="Новый запрос от free-donbass" />
+									<input type="text" name="_gotcha" style="display:none" />
 								</div>
 								<div class="clearfix"></div>
 							</div>
@@ -836,5 +841,6 @@
 		<script src="js/theme-scripts.js"></script>
 		<script src="js/theme-scripts.js"></script>
 		<script src="js/main.js"></script>
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/d6dc5f979caf6d5c1c2141569/bc01628bd434322e3570caac0.js");</script>
 	</body>
 </html>
