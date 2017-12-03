@@ -575,7 +575,9 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<form name="sentMessage" id="contactForm" novalidate="">
+						<form  name="sentMessage" id="contactForm" novalidate=""
+						action="https://formspree.io/pinf_16_u@mail.ru"
+      			method="POST">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
@@ -596,6 +598,8 @@
 										<textarea class="form-control" placeholder="Ваше сообщение *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
+									<input type="hidden" name="_next" value="//site.io/thanks.html" />
+									<input type="text" name="_gotcha" style="display:none" />
 								</div>
 								<div class="clearfix"></div>
 							</div>
