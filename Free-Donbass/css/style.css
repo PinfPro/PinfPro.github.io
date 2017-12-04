@@ -653,6 +653,7 @@ figure.effect-bubba:hover p {
 	transform: translate3d(0,0,0);
 }
 
+
 /*--------------------
 4.4. Dark Short section (counters, quote, etc)
 --------------------*/
@@ -661,6 +662,10 @@ figure.effect-bubba:hover p {
 	/*background-color: #f8f8f8;
 	background-color: #dbdee1;*/
 	background: url("../images/partners/bg-calk.jpg") no-repeat center top / cover;
+}
+
+#about.light-bg a, a:hover, a:focus, a:active, a.active {
+	color: #337ab7;
 }
 
 .dark-bg {
