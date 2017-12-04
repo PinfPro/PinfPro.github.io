@@ -119,9 +119,9 @@ $(document).ready(function() {
 								},
 						    dataType: "json"
 								}).done(function(){
-									$("#name").val();
-									$("#email").val();
-									$("#message").val();
+									$("#name").val("");
+									$("#email").val("");
+									$("#message").val("");
 									alert("Сообщение доставлено!");
 								}).fail(function(){
 									alert("Произошла ошибка!")
