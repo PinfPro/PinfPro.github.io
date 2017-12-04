@@ -126,6 +126,6 @@ $(document).ready(function() {
 								}).fail(function(){
 									alert("Произошла ошибка!")
 								});
-							})
+							});
 						});
 });
