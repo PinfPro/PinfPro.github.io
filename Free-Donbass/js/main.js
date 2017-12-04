@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
 
-	var 	priceDomen = 0,//Цена за доменное имя
-				priceHost = 0,//Цена за хостинг
-				priceAdmin = 0,//ЦЕна за администратирование
-				priceAd = 0,//Цена за рекламу
-				sum = 0,//Итого
+	var 	priceDomen = 149,//Цена за доменное имя
+				priceHost = 1620,//Цена за хостинг
+				priceAdmin = 15300,//ЦЕна за администратирование
+				priceAd = 600,//Цена за рекламу
+				sum = 17669,//Итого
 				domenName = {
 				"free-donbass.ru":{1:149},
 				"free-donbass.com":{1:517},
