@@ -105,27 +105,32 @@ $(document).ready(function() {
 					    $('#tb-sum').text(sum);
 						}
 
-						$(function($){
-							$("#contactForm").submit(function(event){
-								event.preventDefault();
 
-								$.ajax({
-						    url: "https://formspree.io/pinf_16_u@mail.ru",
-						    method: "POST",
-						    data: {
-									name: $("#name").val(),
-									email: $("#email").val(),
-									message: $("#message").val()
-								},
-						    dataType: "json"
-								}).done(function(){
-									$("#name").val("");
-									$("#email").val("");
-									$("#message").val("");
-									alert("Сообщение доставлено!");
-								}).fail(function(){
-									alert("Произошла ошибка!")
-								});
-							});
-						});
+						$('#contactForm').submit(function(e) {
+		 var name = $('#name')
+		 var email = $('#email')
+		 var message = $('#message')
+
+		 if(name.val() == "" || email.val() == "" || message.val() == "") {
+			 $('.submit-fail').fadeToggle(400);
+			 return false;
+		 }
+		 else {
+			 $.ajax({
+				 method: 'POST',
+				 url: '//formspree.io/pinf_16_u@mail.ru',
+				 data: $('#contactForm').serialize(),
+				 datatype: 'json'
+			 });
+			 e.preventDefault();
+			 $(this).get(0).reset();
+			 $('.submit-success').fadeToggle(400);
+		 }
+	 });
+
+ $('.submit-fail, .submit-success').click(function() {
+	 $(this).hide();
+ })
+
+
 });
