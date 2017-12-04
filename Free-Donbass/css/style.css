@@ -70,6 +70,10 @@ a, a:hover, a:focus, a:active, a.active {
 	outline: 0;
 }
 
+#about .section-title a:hover, a:focus, a:active, a.active {
+	color: inherit;
+}
+
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -662,10 +666,6 @@ figure.effect-bubba:hover p {
 	/*background-color: #f8f8f8;
 	background-color: #dbdee1;*/
 	background: url("../images/partners/bg-calk.jpg") no-repeat center top / cover;
-}
-
-#about.light-bg a, a:hover, a:focus, a:active, a.active {
-	color: #337ab7;
 }
 
 .dark-bg {
