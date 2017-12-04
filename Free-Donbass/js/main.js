@@ -108,7 +108,7 @@ $(document).ready(function() {
 });
 
 $(function($){
-	$("form").submit(function(event){
+	$("contactForm").submit(function(event){
 		event.preventDefault();
 
 		$.ajax({
