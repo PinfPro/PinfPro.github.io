@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+new WOW().init();
 
 	var 	priceDomen = 149,//Цена за доменное имя
 				priceHost = 1620,//Цена за хостинг
